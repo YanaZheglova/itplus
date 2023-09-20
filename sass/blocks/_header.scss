@@ -1,0 +1,51 @@
+.header {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: $border-color;
+  padding: 40px 0px 40px 0px;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+}
+.logo__link {
+}
+.logo__img {
+}
+.header__menu {
+}
+
+.header__contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/phone-svg.svg);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    right: 170px;
+    transform: translateY(40%);
+  }
+}
+.header__contact-time {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: $black-color;
+}
+.header__contact-phono {
+  color: $black-color;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}

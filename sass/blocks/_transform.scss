@@ -1,0 +1,67 @@
+.transform {
+  background-color: $bg-color;
+  padding-top: 45px;
+}
+
+.transform__content {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 25px;
+  margin-bottom: 45px;
+}
+.transform__content-title {
+  display: flex;
+  flex-direction: column;
+}
+.transform__title {
+  order: 2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: $black-color;
+  line-height: 1.33;
+  font-size: 36px;
+}
+.transform__subtitle {
+  order: 1;
+  color: $accept-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.transform__content_text {
+  max-width: 700px;
+  line-height: 2.33;
+}
+.transform__block {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.block__inner1 {
+  background-image: url(/img/flipbox1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -90px;
+  height: 270px;
+}
+.block__inner2 {
+  background-image: url(/img/flipbox1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -90px;
+}
+.block__inner3 {
+  background-image: url(/img/flipbox1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -90px;
+}
+.transform__img {
+}
+.transform__text {
+}
