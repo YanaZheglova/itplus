@@ -1,0 +1,155 @@
+.projects {
+  padding: 45px 0px;
+  background-color: $bg-color;
+}
+
+.projects__head {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  margin-top: 25px;
+}
+
+.projects__head-title {
+  display: flex;
+  flex-direction: column;
+}
+.projects__title {
+  order: 2;
+  max-width: 500px;
+  margin-bottom: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: $black-color;
+  line-height: 1.33;
+  font-size: 36px;
+  order: 2;
+}
+.projects__subtitle {
+  order: 1;
+  color: $accept-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.projects__text {
+  max-width: 500px;
+}
+.projects__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.projects__box {
+  width: 370px;
+  height: 370px;
+}
+
+.projects__box figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  background: #527c82;
+  text-align: center;
+  cursor: pointer;
+}
+.projects__box figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
+}
+.projects__box figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.projects__box figure figcaption::before,
+.projects__box figure figcaption::after {
+  pointer-events: none;
+}
+.projects__box figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.projects__box figure projects__card-title {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.projects__box figure projects__card-title span {
+  font-weight: 800;
+}
+.projects__box figure projects__card-title,
+.projects__box figure p {
+  margin: 0;
+}
+.projects__box figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.projects__card-img:hover img {
+  opacity: 0.4;
+  filter: grayscale(90%);
+
+  transform: translate3d(0, 0, 0);
+}
+figure.projects__card-img figcaption {
+  text-align: right;
+}
+figure.projects__card-img projects__card-title,
+figure.projects__card-img p {
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  padding: 10px 0;
+}
+figure.projects__card-img p {
+  bottom: 30px;
+  line-height: 1.5;
+
+  transform: translate3d(0, 100%, 0);
+}
+figure.projects__card-img projects__card-title {
+  top: 30px;
+
+  transition: transform 0.5s ease;
+
+  transform: translate3d(0, 20px, 0);
+}
+figure.projects__card-img:hover projects__card-title {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.projects__card-img projects__card-title::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  content: "";
+
+  transform: translate3d(0, 40px, 0);
+}
+figure.projects__card-img projects__card-title::after,
+figure.projects__card-img p {
+  opacity: 0;
+
+  transition: opacity 0.5s, transform 0.35s;
+}
+figure.projects__card-img:hover projects__card-title::after,
+figure.projects__card-img:hover p {
+  opacity: 1;
+
+  transform: translate3d(0, 0, 0);
+}

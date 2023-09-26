@@ -1,0 +1,64 @@
+.footer {
+  background-image: url(/img/bg-footer1.png);
+  background-color: $bg-color-dark;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: $white-color;
+  padding: 80px 0px;
+}
+
+.footer__logo {
+}
+
+.logo__link {
+}
+.logo__img {
+}
+.footer__contact {
+  display: flex;
+
+  justify-content: space-around;
+  margin-top: 65px;
+}
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+  align-items: center;
+}
+.footer__contact-img {
+  padding-bottom: 25px;
+}
+.footer__contact-text a {
+  color: $white-color;
+  font-size: 18px;
+}
+.footer__contact-text {
+  color: $white-color;
+  font-size: 18px;
+}
+.footer__menu {
+  padding: 50px 0px;
+}
+.footer__menu .menu__link {
+  color: $white-color;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu__item {
+}
+
+.footer__social {
+}
+.social__list {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+}
+.social__item {
+}
+.social__link {
+  color: $white-color;
+}
