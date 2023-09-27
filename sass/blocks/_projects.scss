@@ -62,12 +62,11 @@
   opacity: 0.8;
 }
 .projects__box figure figcaption {
-  padding: 2em;
-  color: #fff;
+  color: $white-color;
   text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 15px;
 }
 .projects__box figure figcaption::before,
 .projects__box figure figcaption::after {

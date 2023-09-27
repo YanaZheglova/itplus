@@ -1,5 +1,5 @@
 .services {
-  margin-top: 150px;
+  margin-top: 230px;
   margin-bottom: 100px;
 }
 .row__services {
@@ -33,34 +33,43 @@
   justify-content: space-around;
 }
 
-.services__block1 {
-  max-width: 300px;
-  position: relative;
-
-  &::before {
-    content: "\f047";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-
-    height: 50px;
-  }
-}
-.services__block2 {
-  max-width: 300px;
-}
-.services__block3 {
-  max-width: 300px;
-}
-.services__block4 {
-  max-width: 300px;
-}
-.services__block5 {
-  max-width: 300px;
-}
+.services__block1,
+.services__block2,
+.services__block3,
+.services__block4,
+.services__block5,
 .services__block6 {
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 45px;
+
+  transition: all 0.5s ease;
+}
+.services__block1:hover,
+.services__block2:hover,
+.services__block3:hover,
+.services__block4:hover,
+.services__block6:hover,
+.services__block5:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+.services__block1:hover .services__block-icon,
+.services__block2:hover .services__block-icon,
+.services__block3:hover .services__block-icon,
+.services__block5:hover .services__block-icon,
+.services__block6:hover .services__block-icon,
+.services__block4:hover .services__block-icon {
+  color: $hover-color-menu;
+}
+
+.services__block-icon {
+  color: $accept-color;
+  padding-bottom: 15px;
+  transition: all 0.5s ease;
+  /*   &:hover {
+    color: $hover-color-menu;
+  } */
 }
 .services__block-title {
   margin-bottom: 17px;
@@ -71,4 +80,5 @@
 }
 .services__block-text {
   line-height: 2;
+  padding-left: 10px;
 }
