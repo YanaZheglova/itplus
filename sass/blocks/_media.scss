@@ -45,6 +45,19 @@
   .row__services {
     padding-left: 45px;
   }
+  .projects__content {
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .projects__box {
+    max-width: 100%;
+  }
+  .projects__card-img img {
+  }
+  .consultation__subtitle,
+  .consultation__tel a {
+    font-size: 50px;
+  }
 }
 @media (max-width: 1000px) {
   .info__title {
@@ -63,6 +76,15 @@
   .services__block5,
   .services__block6 {
     padding: 40px 30px;
+  }
+
+  .technology__content {
+    width: 400px;
+  }
+
+  .projects__card-img img {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -92,7 +114,6 @@
   }
 
   .transform__block {
-    flex-direction: column;
     row-gap: 10px;
     align-items: center;
   }
@@ -100,11 +121,34 @@
   .block__inner2,
   .block__inner1 {
     margin-bottom: 0px;
-    height: 300px;
-    width: 370px;
+    height: 250px;
+    width: 350px;
   }
   .transform__title {
     font-size: 25px;
+  }
+  .transform__text {
+    font-size: 16px;
+    padding-left: 90px;
+  }
+  .technology__cars {
+    width: 80%;
+  }
+  .technology__content {
+    width: 100%;
+    padding-bottom: 35px;
+    align-items: center;
+  }
+  .row__technology {
+    flex-direction: column;
+    align-items: center;
+  }
+  .technology__title {
+    font-size: 25px;
+  }
+  .consultation__subtitle,
+  .consultation__tel a {
+    font-size: 45px;
   }
 }
 @media (max-width: 750px) {
@@ -113,7 +157,28 @@
     row-gap: 25px;
     align-items: center;
   }
+  .transform__content_text {
+    max-width: 100%;
+  }
+  .transform__text {
+    padding-top: 170px;
+  }
+  .block__inner3,
+  .block__inner2,
+  .block__inner1 {
+    height: 220px;
+    width: 370px;
+  }
+  .technology {
+    padding: 35px 0px;
+  }
+  .consultation__subtitle,
+  .consultation__tel a {
+    font-size: 35px;
+    font-weight: 800;
+  }
 }
+
 @media (max-width: 700px) {
   .info__title {
     font-size: 40px;
@@ -128,13 +193,42 @@
     width: 200px;
     height: auto;
   }
+  .block__inner3,
+  .block__inner2,
+  .block__inner1 {
+    height: 170px;
+  }
+  .transform__text {
+    font-weight: 600;
+    padding-top: 136px;
+    padding-left: 35%;
+  }
+  .consultation {
+    padding: 80px 0px;
+  }
+  .services {
+    margin-top: 70px;
+  }
   .services__item {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
   }
 }
-
+@media (max-width: 620px) {
+  .consultation__subtitle,
+  .consultation__tel a {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .consultation {
+    padding: 50px 0px;
+  }
+  .transform__block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media (max-width: 590px) {
   .row__info {
     flex-direction: column;
@@ -154,8 +248,6 @@
     width: 100px;
     height: auto;
   }
-}
-@media (max-width: 590px) {
   .services__title {
     font-size: 20px;
   }
@@ -167,5 +259,25 @@
   .services {
     margin-top: 230px;
     margin-bottom: 30px;
+  }
+  .technology {
+    padding: 35px 0px;
+  }
+  .consultation__title {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .consultation__subtitle,
+  .consultation__tel a {
+    font-size: 25px;
+  }
+}
+@media (max-width: 390px) {
+  .consultation__subtitle,
+  .consultation__tel a {
+    font-size: 15px;
   }
 }

@@ -28,21 +28,24 @@
             </a>
           </div>
           <div class="header__menu">
-            <nav class="menu">
+            <nav id="nav" class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="" class="menu__link">О нас</a>
+                  <a href="#about" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Услуги</a>
+                  <a href="#service" class="menu__link">Услуги</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Наши работы</a>
+                  <a href="#technolog" class="menu__link">Наши работы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Контакты</a>
+                  <a href="#contacts" class="menu__link">Контакты</a>
                 </li>
               </ul>
+							<button id="nav-btn" class="nav-button">
+								<img id="nav-btn-img" class="bar" src="./img/bar_black.svg" alt="">
+			</button>
             </nav>
           </div>
           <div class="header__contact">
@@ -77,7 +80,7 @@
         </div>
       </section>
 
-      <section class="transform">
+      <section id="about" class="transform">
         <div class="container">
           <div class="transform__content">
             <div class="transform__content-title">
@@ -109,7 +112,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section id="service" class="services">
         <div class="container">
           <div class="row__services">
             <h3 class="services__title">
@@ -167,7 +170,7 @@
           </div>
         </div>
       </section>
-      <section class="technology">
+      <section id="technolog" class="technology">
         <div class="container">
           <div class="row__technology">
             <div class="technology__content">
@@ -340,7 +343,7 @@
           </div>
         </div>
       </section>
-			<section class="consultation">
+			<section id="contacts" class="consultation">
 				<div class="container">
 					<h8 class="consultation__title">// Drop us a line! We are here to answer your questions 24/7</h8>
 					<div class="consultation__subtitle">NEED A CONSULTATION?</div>
@@ -395,6 +398,10 @@
 				</ul>
 			</div>
 		</div>
+		<div className="scroll-to-top">
+			<span class="btn btn-position btn-style">^</i>
+	</div>
 		</footer>
+		<script  src="./menu.js"></script>
   </body>
 </html>

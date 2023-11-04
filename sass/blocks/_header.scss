@@ -24,6 +24,7 @@
   flex-direction: column;
   row-gap: 10px;
   position: relative;
+  align-items: center;
 
   &::before {
     content: "";
@@ -33,7 +34,7 @@
     background-repeat: no-repeat;
     width: 45px;
     height: 45px;
-    right: 170px;
+    right: 155px;
     transform: translateY(40%);
   }
 }
